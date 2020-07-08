@@ -23,7 +23,7 @@ except ImportError:
 
 
 try:
-    pd.read_csv(here("./data/gapminder.tsv", sep='\t'))
+    pd.read_csv(here("./data/gapminder.tsv"), sep='\t')
 except NameError:
     print("Unable to load dataset using pd. Do you have pandas installed?")
 except FileNotFoundError:
